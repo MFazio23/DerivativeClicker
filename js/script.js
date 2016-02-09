@@ -40,9 +40,20 @@ function addProofs(proofs){
 
 //function to display values
 function displayNum(num, ifMoney){
-	displayNum.suffixes = ["K", "M", "B", "T", "Qa", "Qt", "Sx", "Sp", "Oc", "Nn", "Dc", "UDc", "DDc", "TDc", "QaDc", "QtDc", "SxDc", "SpDc", "ODc", "NDc", "Vi", 
-						   "UVi", "DVi", "TVi", "QaVi", "QtVi", "SxVi", "SpVi", "OcVi", "NnVi", "Tg", "UTg", "DTg", "TTg", "QaTg", "QtTg", "SxTg", "SpTg", "OcTg", "NnTg", "Qd",
-						   "UQd", "DQd", "TQd", "QaQd", "QtQd", "SxQd", "SpQd", "OcQd", "NnQd", "Qq", "UQq", "DQq", "TQq", "QaQq", "QtQq", "SxQq", "SpQq", "OcQq", "NnQq", "Sg"]
+	displayNum.suffixes
+		= [
+			"K", "M", "B", "T", "Qa", "Qt", "Sx", "Sp", "Oc", "Nn",
+			"Dc", "UDc", "DDc", "TDc", "QaDc", "QtDc", "SxDc", "SpDc", "ODc", "NDc",
+			"Vi", "UVi", "DVi", "TVi", "QaVi", "QtVi", "SxVi", "SpVi", "OcVi", "NnVi",
+			"Tg", "UTg", "DTg", "TTg", "QaTg", "QtTg", "SxTg", "SpTg", "OcTg", "NnTg",
+			"Qd", "UQd", "DQd", "TQd", "QaQd", "QtQd", "SxQd", "SpQd", "OcQd", "NnQd",
+			"Qq", "UQq", "DQq", "TQq", "QaQq", "QtQq", "SxQq", "SpQq", "OcQq", "NnQq",
+			"Sg", "USg", "DSg", "TSg", "QaSg", "QtSg", "SxSg", "SpSg", "OcSg", "NnSg",
+			"Su", "USu", "DSu", "TSu", "QaSu", "QtSu", "SxSu", "SpSu", "OcSu", "NnSu",
+			"Og", "UOg", "DOg", "TOg", "QaOg", "QtOg", "SxOg", "SpOg", "OcOg", "NnOg",
+			"Nn", "UNn", "DNn", "TNn", "QaNn", "QtNn", "SxNn", "SpNn", "OcNn", "NnNn",
+			"Cn", "UCn", "DCn", "TCn", "QaCn", "QtCn", "SxCn", "SpCn", "OcCn", "NnCn"
+		];
 	
 	if(player.sciNotation) return Math.abs(num) < 100000 ? (ifMoney ? parseFloat(num).toFixed(2) : num) : parseFloat(num).toPrecision(5);
 	
